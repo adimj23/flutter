@@ -13,24 +13,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("My home page"),
         ),
-        body: Container(
-          color: Colors.lightBlue,
+        body: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Container(
-                height: 50,
-                color: Colors.green,
-                child: Text("Columns"),
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image.network(
+                "https://images.unsplash.com/photo-1609541994821-d909982e2f1b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=60",
+                height: 200,
               ),
-              Container(
-                color: Colors.orange,
-                child: Text("and"),
-              ),
-              Container(
-                color: Colors.red,
-                child: Text("Rows"),
+              Image.asset(
+                "flutterlogo.png",
+                height: 200,
               ),
             ],
           ),
